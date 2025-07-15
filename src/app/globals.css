@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Noto+Nastaliq+Urdu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== THEME COLORS ========== */
+
+/* 🌞 Light Theme (default) */
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #111827;
+  --accent: #e0f2fe;
+  --accent-foreground: #0369a1;
+  --muted: #f9fafb;
+  --muted-foreground: #6b7280;
+  --border: #e5e7eb;
+  --input: #ffffff;
+  --ring: #c7d2fe;
+}
+
+/* 🌙 Dark Theme */
+.dark {
+  --background: #111827;
+  --foreground: #f9fafb;
+  --primary: #6366f1;
+  --primary-foreground: #e0e7ff;
+  --secondary: #1f2937;
+  --secondary-foreground: #f9fafb;
+  --accent: #312e81;
+  --accent-foreground: #c7d2fe;
+  --muted: #1f2937;
+  --muted-foreground: #9ca3af;
+  --border: #374151;
+  --input: #1f2937;
+  --ring: #6366f1;
+}
+
+/* 🍬 Pastel Theme */
+.pastel {
+  --background: #fef6fb;
+  --foreground: #4b4b4b;
+  --primary: #ffc8dd;
+  --primary-foreground: #ffffff;
+  --secondary: #bde0fe;
+  --secondary-foreground: #333333;
+  --accent: #cdb4db;
+  --accent-foreground: #2a2a2a;
+  --muted: #f1f1f1;
+  --muted-foreground: #888888;
+  --border: #f3d5e6;
+  --input: #f9e6f2;
+  --ring: #cbaacb;
+}
+/* 🌿 Nature Theme */
+
+/* ========== BASE LAYER ========== */
+@layer base {
+  body {
+    @apply transition-all duration-300;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Comic Neue', 'Segoe UI', sans-serif;
+  }
+
+  .font-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+  }
+
+  input, textarea {
+    @apply transition-all duration-200;
+  }
+
+  button {
+    @apply rounded-xl px-4 py-2 font-medium shadow-sm transition-transform duration-200;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* ========== COMPONENTS LAYER ========== */
+@layer components {
+  .theme-btn {
+    @apply p-2 rounded-full bg-primary text-primary-foreground shadow hover:scale-110 transition-all duration-200;
+  }
+}
