@@ -57,7 +57,7 @@ export default function Home() {
       >
         Read less. Know more. Summarize smarter.
       </motion.p>
-      
+
       <motion.div
         className="flex flex-col sm:flex-row gap-2 w-full max-w-xl"
         initial={{ opacity: 0 }}
@@ -120,7 +120,7 @@ export default function Home() {
         <div>© {new Date().getFullYear()} Tooba&apos;s Blog Summarizer</div>
         <div className="flex gap-4">
           <a
-            href="https://github.com/yourusername/your-repo"
+            href="https://github.com/Tooba-3/Nexium_Toobazafar_Assign2"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline hover:text-mint-900"
@@ -128,7 +128,7 @@ export default function Home() {
             GitHub Repository
           </a>
           <a
-            href="https://your-app.vercel.app"
+            href="https://nexium-toobazafar-assign2.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline hover:text-mint-900"
